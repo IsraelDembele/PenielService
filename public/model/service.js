@@ -1,24 +1,24 @@
 // start point 
 
-//var i = 0;
-//var images = [];
-//var time = 3000;    
+var i = 0;
+var images = [];
+var time = 3000;    
 
 // images list
-//images[0] = 'image1.jpg';
-//images[1] = 'image2.jpg';
-//images[2] = 'image3.jpg'; 
+images[0] = './assets/images/image1.jpg';
+images[1] = './assets/images/image2.jpg';
+images[2] = './assets/images/image3.jpg'; 
 
 
 // change image 
-//function changeImg(){
-//document.slide.src = images[i];
-//if(i < images.length - 1){
-//i++;
-//} else{
-//   i = 0;
-//}
-//setTimeout("changeImg()", time)
+function changeImg(){
+document.slide.src = images[i];
+if(i < images.length - 1){
+i++;
+} else{
+       i = 0;
+}
+setTimeout("changeImg()", time)
 
-//};
-//window.onload = changeImg;
+};
+window.onload = changeImg;
